@@ -9,7 +9,7 @@ You will need to bring your own laptop to participate in this workshop. You will
 
 For the purposes of this workshop, we'll have a web interface version of RStudio available at:
 
-https://mybinder.org/v2/gh/cmu_lib/twitter_textmining_workshop_2020/master?urlpath=rstudio
+https://mybinder.org/v2/gh/cmu-lib/twitter_textmining_workshop_2020/master?urlpath=rstudio
 
 **Note: this can take a few minutes to open up the first time that you load it; if it goes for a very long time, you can try reloading your browser window.**
 
