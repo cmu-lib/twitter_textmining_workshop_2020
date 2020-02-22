@@ -4,4 +4,5 @@
 # If you are using the Binder web interface, these have already been installed
 # for you
 
-install.packages(c("tidyverse", "tidytext"))
+install.packages("tidyverse")
+install.packages("tidytext")
