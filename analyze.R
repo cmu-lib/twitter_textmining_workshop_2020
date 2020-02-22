@@ -11,10 +11,6 @@ no_url_tweets <- tweets %>%
 
 tweets <- no_url_tweets
 
-tweets %>% 
-  sample_n(size = 200000) %>% 
-  write_csv("sampled_tweets.csv")
-
 sampled_tweets <- read_csv("sampled_tweets.csv", col_types = "cTcc", locale = locale(tz = "US/Eastern"))
 
 tweets <- sampled_tweets
