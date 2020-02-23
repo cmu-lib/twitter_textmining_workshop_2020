@@ -2,10 +2,12 @@ library(tidyverse)
 library(lubridate)
 library(tidytext)
 
-raw_tweets <- read_csv("sampled_tweets.csv", col_types = "cTcc", locale = locale(tz = "US/Eastern")) 
+raw_tweets <- read_csv("sampled_tweets.csv", col_types = "cTcc", 
+                       locale = locale(tz = "US/Eastern")) 
 
 tweets <- raw_tweets %>% 
-  # Immediately make a copy of the data since we will later on wantto make modifications wihtout needing to read in the whole CSV again
+  # Immediately make a copy of the data since we will later on want to make 
+  # modifications without needing to read in the whole CSV again
   mutate(
     text = str_replace_all(text, pattern = "http\\S+", ""),
     hour = floor_date(time, "hour")
@@ -36,7 +38,8 @@ token_counts <- tweet_tokens %>%
   count(word, name = "token_count") %>% 
   arrange(desc(token_count))
 
-# Stopwords - all the kinds of words we might want to remove if we're looking for significant content words
+# Stopwords - all the kinds of words we might want to remove if we're looking 
+# for significant content words
 ?get_stopwords
 english_stopwords <- get_stopwords("en")$word
 spanish_stopwords <- get_stopwords("es")$word
@@ -86,7 +89,8 @@ top_20_user_terms <- user_tf_idf %>%
 
 bing_sentiments <- cleaned_tweets %>% 
   left_join(get_sentiments("bing"), by = "word") %>% 
-  mutate(sentiment_value = if_else(sentiment == "positive", true = 1, false = -1, missing = 0))
+  mutate(sentiment_value = if_else(sentiment == "positive", 
+                                   true = 1, false = -1, missing = 0))
 
 averaged_sentiments <- bing_sentiments %>% 
   group_by(id, time) %>% 
