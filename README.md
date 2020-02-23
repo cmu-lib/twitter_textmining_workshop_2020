@@ -3,6 +3,10 @@ CMU Gerrymandering Series - Twitter Text Analysis with R
 
 Scripts for an R workshop by Matthew Lincoln for Carnegie Mellon University (February 2020).
 
+## TL;DR
+
+Click this link: https://mybinder.org/v2/gh/cmu-lib/twitter_textmining_workshop_2020/master?urlpath=rstudio
+
 ## What we'll be doing
 
 We are going to examine a sample of a little over 215,000 tweets from the 2016 "Election Day" Twitter dataset compiled by George Washington University Libraries:
