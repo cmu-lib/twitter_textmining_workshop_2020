@@ -11,13 +11,18 @@ We are going to examine a sample of a little over 215,000 tweets from the 2016 "
 
 Harvesting data from Twitter is a nuanced and invovled process, and we won't be covering it in this workshop. Instead, I will be providing a pre-processed sample of tweets so that we can get straight into text mining. However, if you would like to learn how to begin harvesting your own custom Twitter data set, I recommend _The Programming Historian_'s ["Beginner's Guide to Twitter Data"](https://programminghistorian.org/en/lessons/beginners-guide-to-twitter-data) that offers a tutorial.
 
-The dataset `sampled_tweets.csv` contains a random sample of 215,224 tweets taken from the full GWUL "Election Day" dataset of over 2 million tweets. I have also only pulle dout selected fields: the tweet ID, `user` name, `time` of the tweet, and the tweet `text`. Twitter's API output provides a lot more contextual information that may be useful for you, especially if you are interested in network analysis, but that is outtside the context of this one workshop.
+The dataset `sampled_tweets.csv` contains a random sample of 215,224 tweets taken from the full GWUL "Election Day" dataset of over 2 million tweets. We will be looking at this small sample to make sure our code can run quickly during the workshop. After the workshop, if you would like to try the same code on all 2 million tweets, [I have made it temporary available here until March 10th](https://figshare.com/s/c8eec6fe7a1971fd49e6). I have also only pulled out selected fields:
 
-We will be looking at this small sample to make sure our code can run quickly during the workshop. After the workshop, if you would like to try the same code on all 2 million tweets, [I have made it temporary available here until March 10th](https://figshare.com/s/c8eec6fe7a1971fd49e6).
+- the tweet `id`
+- `user` name
+- `time` of the tweet
+- tweet `text` 
+
+Twitter's API output provides a lot more contextual information that may be useful for you, especially if you are interested in network analysis, but that is outside the context of this one workshop.
 
 ## Accessing R
 
-You will need to bring your own laptop to participate in this workshop. You will have two options for how to access R, Rstudio, and the code and data we're using:
+You will need to bring your own laptop to participate in this workshop. You will have two options for how to access R, RStudio, and the code and data we're using:
 
 ### Easy but Slightly Limited: Use the free web-based RStudio via Binder
 
@@ -45,7 +50,7 @@ We definitely recommend doing this if you have the time, as you'll be able to mo
 
 3. [Download the workshop code](https://github.com/cmu-lib/twitter_textmining_workshop_2020/archive/master.zip), unzip it, and then double-click on `election_tweetmining.Rproj` to launch the project inside RStudio.
 
-4. Install the tidyverse, quanteda, and other R packages as listed in the `install.R` file in the base directory of the workshop code.
+4. Install the tidyverse and other R packages as listed in the `install.R` file in the base directory of the workshop code.
 
 **We won't be spending any time during this workshop helping you to set this up!** There are a lot of resources online on "how to install r and rstudio for XXX operating system".
 If you run in to any difficulty, or if this sounds like way too much to start out with on this workshop, that's why we have option 1 described above.
