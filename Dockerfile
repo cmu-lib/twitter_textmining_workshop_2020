@@ -1,4 +1,4 @@
-FROM mdlincoln/cmu_textmining
+FROM mdlincoln/cmu_textmining:latest
 
 ## Copies your repo files into the Docker Container
 USER root
