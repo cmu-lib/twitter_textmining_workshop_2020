@@ -58,3 +58,37 @@ We definitely recommend doing this if you have the time, as you'll be able to mo
 
 **We won't be spending any time during this workshop helping you to set this up!** There are a lot of resources online on "how to install r and rstudio for XXX operating system".
 If you run in to any difficulty, or if this sounds like way too much to start out with on this workshop, that's why we have option 1 described above.
+
+## Completed script
+
+The full workshop code is in `completed/analyze.R`
+
+## Futher Reading
+
+### TF-IDF
+
+Term-frequency-inverse-document-frequency: an heuristic for ranking words that show up disproportionately in one document compared to the rest of the corpus
+
+- <https://programminghistorian.org/en/lessons/analyzing-documents-with-tfidf>
+
+### Sentiment Analysis
+
+Sentiment analysis _attempts_ to score texts based on a variet of sentiment/emotion scales, from positive-negative or using a dictionary of categories of sentiment. Take a look at these with a grain of salt; it is extremely difficult to intuit sentiment from a single word.
+
+### Topic Modeling
+
+Topic modeling, a common term for Latent Dirichlet Analysis, seeks to find latent clusters of terms that tend to appear in the same documents (hence earning the name "topic" modeling). Useful for getting a sense of general subjects covered by a corpus
+
+
+
+### Corpus similarity / difference measures
+
+### String distance
+
+How different are short strings, like "Leonardo da Vinci" and "Leeonardo de Vinci"? A variety of string distance measures can help you quantify this, and find fuzzy matches for strings that vary by spelling or typos:
+
+- 
+
+### Text Reuse
+
+The R package [textreuse]() offers a few efficient techniques for finding larger-scale text re-use (quoting entire sentences or paragraphs) across documents in large corpora.
