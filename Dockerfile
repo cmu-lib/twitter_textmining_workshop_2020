@@ -1,4 +1,4 @@
-FROM mdlincoln/cmu_textmining:tidytext
+FROM mdlincoln/cmu_tidytext
 
 ## Copies your repo files into the Docker Container
 USER root
