@@ -4,6 +4,6 @@
 # If you are using the Binder web interface, these have already been installed
 # for you
 
-install.packages("tidyverse")
-install.packages("tidytext")
-install.packages("textdata")
+# install.packages("tidyverse")
+# install.packages("tidytext")
+# install.packages("textdata")
