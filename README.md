@@ -75,20 +75,20 @@ Term-frequency-inverse-document-frequency: an heuristic for ranking words that s
 
 Sentiment analysis _attempts_ to score texts based on a variet of sentiment/emotion scales, from positive-negative or using a dictionary of categories of sentiment. Take a look at these with a grain of salt; it is extremely difficult to intuit sentiment from a single word.
 
+- <https://www.tidytextmining.com/sentiment.html>
+
 ### Topic Modeling
 
 Topic modeling, a common term for Latent Dirichlet Analysis, seeks to find latent clusters of terms that tend to appear in the same documents (hence earning the name "topic" modeling). Useful for getting a sense of general subjects covered by a corpus
 
-
-
-### Corpus similarity / difference measures
+- <https://www.tidytextmining.com/topicmodeling.html>
 
 ### String distance
 
 How different are short strings, like "Leonardo da Vinci" and "Leeonardo de Vinci"? A variety of string distance measures can help you quantify this, and find fuzzy matches for strings that vary by spelling or typos:
 
-- 
+- <https://cran.r-project.org/web/packages/stringdist/index.html>
 
-### Text Reuse
+### Text Reuse and corpus similarlity/dissimilarity
 
-The R package [textreuse]() offers a few efficient techniques for finding larger-scale text re-use (quoting entire sentences or paragraphs) across documents in large corpora.
+The R package [textreuse](https://cran.r-project.org/web/packages/textreuse/index.html) offers a few efficient techniques for finding larger-scale text re-use (quoting entire sentences or paragraphs) across documents in large corpora.
